@@ -1,0 +1,40 @@
+/*
+ * Programmer: Danielle Lamb 
+ * Date: April 22, 2018
+ * Lab#: 10
+ * Purpose: Create program that asks for the balance in each bank account
+and then writes out the service charge.
+ */
+import java.util.Scanner; 
+public class LabTen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner reader = new Scanner(System.in);
+	
+		double checkAccount;
+		double saveAccount;
+		
+		System.out.println("Enter checking account amount.");
+		checkAccount = reader.nextDouble();
+		
+		System.out.println("Enter savings account amount.");
+		saveAccount = reader.nextDouble();
+		
+		if (checkAccount <= 1000.00) {
+			System.out.println("There are no service charges to your checking account!");
+		}// End of IF
+		else {
+			System.out.println("There is a service charge to your checking account. Your amount is: " + (checkAccount + .15));
+		}// End of ELSE
+		if (saveAccount <= 1500.00){
+			System.out.println("There are no service charges to your checking account!");
+		}// End of IF
+			else {
+			System.out.println("There is a service charge to your savings account. Your amount is: " + (saveAccount + .15));
+		}// End of ELSE
+		
+	}//End of MAIN
+
+}//End of CLASS
+
